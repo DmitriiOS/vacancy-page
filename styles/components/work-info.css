@@ -1,0 +1,113 @@
+.work-info {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    padding: 72px 0 140px 0;
+}
+
+.work-info__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.work-info__list {
+    list-style-type: '- ';
+    padding-left: 12px;
+}
+
+.work-info__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.work-info__button {
+    width: 234px;
+    height: 56px;
+    font-size: 20px;
+}
+
+.work-info__image {
+    position: absolute;
+    width: 538px;
+    bottom: 30px;
+    right: 0;
+}
+
+@media screen and (max-width: 1279px) {
+    .work-info {
+        padding: 5.77vw 0 4.74vw 0;
+        gap: 32px;
+    }
+    .work-info__title {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .work-info__item {
+        margin-bottom: 16px;
+    }
+    .work-info__button {
+        width: 203px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .work-info__image {
+        width: 36.5vw;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 969px) {
+    .work-info {
+        padding: 4.06vw 0 5.93vw 0;
+        gap: 24px;
+    }
+    .work-info__title {
+        font-size: 26px;
+        line-height: 31px;
+    }
+    .work-info__item {
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 12px;
+    }
+    .work-info__button {
+        width: 166px;
+        height: 38px;
+        font-size: 15px;
+    }
+    .work-info__image {
+        width: 37.8vw;
+        bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .work-info {
+        padding: 8.12vw 0 30.62vw 0;
+        gap: 20px;
+    }
+    .work-info__title {
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .work-info__item {
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+    .work-info__button {
+        width: 132px;
+        height: 33px;
+        font-size: 14px;
+    }
+    .work-info__image {
+        width: 46.8vw;
+        bottom: 10px;
+    }
+}

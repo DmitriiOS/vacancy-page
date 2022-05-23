@@ -1,0 +1,101 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.2vw;
+    background: linear-gradient(90deg, #F8FDFF 0%, #FEFDFE 100%);
+    box-shadow: 0px 8px 8px 0px #F8FDFF;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header__hamburger {
+    display: none;
+}
+
+.header__checkbox {
+    visibility:hidden;
+}
+
+.header__hamburger {
+    cursor: pointer;
+}
+
+.header__navigation {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-item {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    border-bottom: 2px rgba(1, 1, 1, 0) solid;
+}
+
+.header__nav-item:hover {
+    border-bottom: 2px #57A84D solid;
+}
+
+@media screen and (max-width: 1279px) {
+    .header__nav-item {
+        font-size: 13px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 969px) {
+    .header__navigation {
+        display: none;
+    }
+    .header__hamburger {
+        display: block;
+    }
+    .header__checkbox:checked + label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+    }
+    
+    .header__checkbox:checked + label + .header__navigation {
+        display: block;
+    }
+    
+    .header__checkbox:checked + label + .header__navigation {
+        display: flex;
+        flex-direction: column;
+        background-color: #FEFDFE;
+        width: 40.9%;
+        position: absolute;
+        top: -20px;
+        right: -4.7vw;
+        padding: 60px 0 12px 12px;
+        box-shadow: -100px 100px 0px 1000px rgba(0, 0, 0, 0.07);
+    }
+    
+    .header__checkbox:checked + label + .header__navigation > a {
+        border-bottom: 1px solid rgba(83, 96, 82, 0.26);
+        padding: 12px 24px;
+    }
+    
+    .header__checkbox:checked + label + .header__navigation > a:hover {
+        border-bottom: none;
+        background: linear-gradient(90deg, 
+            rgba(207, 211, 207, 0.066) 0%, 
+            rgba(207, 211, 207, 0.33) 35.34%, 
+            rgba(207, 211, 207, 0.33) 68.52%, 
+            rgba(207, 211, 207, 0.066) 100%
+        );
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .header__checkbox:checked + label + .header__navigation {
+        width: 57.5%;
+    }
+}

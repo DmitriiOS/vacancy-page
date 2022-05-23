@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'normalize.css';
+@import './components/header.css';
+@import './components/logo.css';
+@import './components/user-info.css';
+@import './components/main.css';
+@import './components/work-info.css';
+@import './components/vacancies.css';
+@import './components/vacancy.css';
+@import './components/extra.css';
+@import './components/footer.css';
+@import './components/button.css';
+@import './components/marked-list.css';
+
+* {
+    font-family: 'Inter', sans-serif;
+    color: #041702;
+}
+
+body {
+    max-width: 1160px;
+    margin: 24px auto;
+    background: linear-gradient(90deg, #F8FDFF 0%, #FEFDFE 100%);
+}
+
+p, h1, h2, h3, ul {
+    margin: 0;
+}
+
+@media screen and (max-width: 1279px) {
+    body {
+        margin: 24px 4.7vw;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 969px) {
+    body {
+        margin: 20px 4.7vw;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    body {
+        margin: 17px 4.7vw;
+    }
+}

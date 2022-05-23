@@ -1,0 +1,17 @@
+.button {
+    background: #F98816;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #032BBB;
+}
